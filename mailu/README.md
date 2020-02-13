@@ -31,6 +31,7 @@ When leaving the default persistence type (`hostPath`), it will create and use a
 | `fullnameOverride`                | Override the full resource names     | `mailu-{release-name}` (or `mailu` if release-name is `mailu`) |
 | `hostnames`                       | List of hostnames to generate certificates and ingresses for | not set           |
 | `domain`                          | Mail domain name, see https://github.com/Mailu/Mailu/blob/master/docs/faq.rst#what-is-the-difference-between-domain-and-hostnames | not set |
+| `front.publicIp`                  | Public ip for mail protocols (smtp...). **Should be set on a node** | not set    |
 | `passwordScheme`                  | Scheme used to hash passwords        | `PBKDF2`                                  |
 | `secretKey`                       | Session encryption key for admin and webmail | not set                           |
 | `mail.messageSizeLimitInMegabytes`| Message size limit in Megabytes      | `50`                                      |
